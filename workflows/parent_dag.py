@@ -25,6 +25,7 @@ with DAG(
     default_args=ARGS,
     tags=["parent", "orchestration", "etl"],
     catchup=False,
+    max_active_runs=1,
     
 ) as dag:
 
