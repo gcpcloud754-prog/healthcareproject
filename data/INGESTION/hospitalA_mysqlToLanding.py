@@ -29,7 +29,7 @@ MYSQL_CONFIG = {
     "url": "jdbc:mysql://35.238.162.31:3306/hospital_a_db?useSSL=false&allowPublicKeyRetrieval=true",
     "driver": "com.mysql.cj.jdbc.Driver",
     "user": "myuser",
-    "password": "mypass"
+    "password": "Ashok$2025"
 }
 
 ##------------------------------------------------------------------------------------------------------------------##
