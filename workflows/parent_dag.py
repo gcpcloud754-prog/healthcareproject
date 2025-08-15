@@ -23,7 +23,9 @@ with DAG(
     schedule_interval="*/10 * * * *",
     description="Parent DAG to trigger PySpark and BigQuery DAGs",
     default_args=ARGS,
-    tags=["parent", "orchestration", "etl"]
+    tags=["parent", "orchestration", "etl"],
+    catchup=False,
+    
 ) as dag:
 
     # Task to trigger PySpark DAG
