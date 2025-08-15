@@ -1,4 +1,4 @@
-CREATE TABLE avd-databricks-demo.temp_dataset.audit_log (
+CREATE TABLE prime-byway-465304-a3.temp_dataset.audit_log (
     data_source STRING,
     tablename STRING,
     load_type STRING,
