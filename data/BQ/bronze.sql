@@ -7,11 +7,21 @@ OPTIONS (
   uris = ['gs://healthcare-bucket-05-08-2025/landing/hospital-a/departments/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `prime-byway-465304-a3.bronze_dataset.encounters_ha` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `prime-byway-465304-a3.bronze_dataset.encounters_ha`
+(
+  EncounterID STRING,
+  PatientID STRING,
+  ProviderID STRING,
+  DeptID STRING,
+  EncounterDate DATE,
+  Diagnosis STRING,
+  Notes STRING
+)
 OPTIONS (
   format = 'JSON',
   uris = ['gs://healthcare-bucket-05-08-2025/landing/hospital-a/encounters/*.json']
 );
+
 
 CREATE EXTERNAL TABLE IF NOT EXISTS `prime-byway-465304-a3.bronze_dataset.patients_ha` 
 OPTIONS (
